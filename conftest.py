@@ -15,5 +15,4 @@ def create_user():
 def login_user_get_token():
     response = requests.post(url=data.Endpoints.login, data=UserPayloads.user_exist)
     token = response.json().get("accessToken")
-    print('это токен',token)
     return token
